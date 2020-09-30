@@ -37,17 +37,29 @@
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 //define( 'DB_COLLATE', '' );
 
-if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
-    $db = parse_url($_ENV['CLEARDB_DATABASE_URL']);
-    define('heroku_e0fef70866a001e', trim($db['path'],'/'));
-    define('b981a537e25a0d', $db['user']);
-    define('0688ca10', $db['pass']);
-    define('us-cdbr-east-02.cleardb.com:3306', $db['host']);
-    define('DB_CHARSET', 'utf8');
-    define( 'DB_COLLATE', '' );
-} else {
-    die('No Database credentials!');
-}
+// ** Heroku ClearDB settings - from Heroku Environment ** //
+$db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('heroku_e0fef70866a001e', trim($db["path"],"/"));
+
+/** MySQL database username */
+define('b981a537e25a0d', $db["user"]);
+
+/** MySQL database password */
+define('0688ca10', $db["pass"]);
+
+/** MySQL hostname */
+define('us-cdbr-east-02.cleardb.com:3306', $db["host"]);
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8');
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
+
+
 /**#@+
  * Chaves únicas de autenticação e salts.
  *

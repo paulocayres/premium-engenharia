@@ -233,7 +233,7 @@ msgid "On mobile, lazy loading can also keep browsers from loading files meant f
 msgstr "Em dispositivos móveis, o carregamento tardio, ou \"lazy loading\", também pode impedir o carregamento de arquivos feitos para outras resoluções. Isso pode reduzir a quantidade de dados consumidos e ajudar na economia de bateria."
 
 #: wp-admin/about.php:102
-msgid "In WordPress 5.5, images wait to load until they’re just about to scroll into view. The technical term is ‘lazy loading’."
+msgid "In WordPress 5.5, images wait to load until they’re just about to scroll into view. The technical term is 'lazy loading’."
 msgstr "No WordPress 5.5, as imagens são carregadas conforme o usuário rola a tela. O termo técnico é carregamento tardio ou \"lazy loading\"."
 
 #: wp-admin/about.php:101

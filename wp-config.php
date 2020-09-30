@@ -22,21 +22,21 @@
 /** O nome do banco de dados do WordPress */
 
 
-// ** Heroku ClearDB settings - from Heroku Environment ** //
-$db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
+// ** Heroku Postgres settings - from Heroku Environment ** //
+$db = parse_url($_ENV["DATABASE_URL"]);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["heroku_e0fef70866a001e"],"/"));
+define('DB_NAME', trim($db["path"],"/"));
 
 /** MySQL database username */
-define('DB_USER', $db["b981a537e25a0d"]);
+define('DB_USER', $db["user"]);
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["0688ca10"]);
+define('DB_PASSWORD', $db["pass"]);
 
 /** MySQL hostname */
-define('DB_HOST', $db["mysql"]);
+define('DB_HOST', $db["host"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

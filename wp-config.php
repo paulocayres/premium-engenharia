@@ -51,7 +51,7 @@ define('DB_USER', $db["b981a537e25a0d"]);
 define('DB_PASSWORD', $db["0688ca10"]);
 
 /** MySQL hostname */
-define('DB_HOST', $db["us-cdbr-east-02.cleardb.com:3306"]);
+define('DB_HOST', $db["us-cdbr-east-02.cleardb.com"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

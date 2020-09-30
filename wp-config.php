@@ -37,7 +37,7 @@
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 //define( 'DB_COLLATE', '' );
 
-if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
+if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
     $db = 'mysql://b981a537e25a0d:0688ca10@us-cdbr-east-02.cleardb.com/heroku_e0fef70866a001e?reconnect=true'
 } else {
     die(‘No Database credentials!’);

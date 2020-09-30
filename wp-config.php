@@ -38,7 +38,19 @@
 //define( 'DB_COLLATE', '' );
 
 // ** Heroku ClearDB settings - from Heroku Environment ** //
-$db = 'mysql://b981a537e25a0d:0688ca10@us-cdbr-east-02.cleardb.com/heroku_e0fef70866a001e?reconnect=true'
+/** The name of the database for WordPress */
+define('DB_NAME', 'heroku_e0fef70866a001e?reconnect=true');
+
+/** MySQL database username */
+define('DB_USER', 'b981a537e25a0d');
+
+/** MySQL database password */
+define('DB_PASSWORD', '0688ca10');
+
+/** MySQL hostname */
+define('DB_HOST', 'us-cdbr-east-02.cleardb.com');
+
+//mysql://b981a537e25a0d:0688ca10@us-cdbr-east-02.cleardb.com/heroku_e0fef70866a001e?reconnect=true
 
 /**#@+
  * Chaves únicas de autenticação e salts.

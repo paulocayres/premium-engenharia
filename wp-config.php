@@ -38,13 +38,7 @@
 //define( 'DB_COLLATE', '' );
 
 if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-    $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
-    define(‘heroku_e0fef70866a001e’, trim($db[`path`],`/`));
-    define(‘b981a537e25a0d’, $db[`user`]);
-    define(‘0688ca10’, $db[`pass`]);
-    define(‘us-cdbr-east-02.cleardb.com’, $db[`host`]);
-    define(‘DB_CHARSET’, ‘utf8’);
-    define(‘DB_COLLATE’, ‘’);
+    $db = 'mysql://b981a537e25a0d:0688ca10@us-cdbr-east-02.cleardb.com/heroku_e0fef70866a001e?reconnect=true'
 } else {
     die(‘No Database credentials!’);
 }

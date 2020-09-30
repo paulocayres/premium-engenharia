@@ -20,22 +20,6 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-//define( 'DB_NAME', 'wordpress' );
-
-/** Usuário do banco de dados MySQL */
-//define( 'DB_USER', 'root' );
-
-/** Senha do banco de dados MySQL */
-//define( 'DB_PASSWORD', '' );
-
-/** Nome do host do MySQL */
-//define( 'DB_HOST', 'localhost' );
-
-/** Charset do banco de dados a ser usado na criação das tabelas. */
-//define( 'DB_CHARSET', 'utf8' );
-
-/** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
-//define( 'DB_COLLATE', '' );
 
 // ** Heroku ClearDB settings - from Heroku Environment ** //
 /** The name of the database for WordPress */

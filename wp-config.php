@@ -23,7 +23,7 @@
 
 // ** Heroku ClearDB settings - from Heroku Environment ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'heroku_e0fef70866a001e?reconnect=true');
+define('DB_NAME', 'heroku_e0fef70866a001e');
 
 /** MySQL database username */
 define('DB_USER', 'b981a537e25a0d');
